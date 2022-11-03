@@ -1,0 +1,12 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "outDir": "es",
+    "module": "ESNext",
+    "declaration": true
+  },
+  "exclude": [		
+    "node_modules/",
+    "src/__tests__/"
+  ]
+}

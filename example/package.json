@@ -1,0 +1,65 @@
+{
+  "name": "my-app",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.16.4",
+    "@testing-library/react": "^13.3.0",
+    "@testing-library/user-event": "^13.5.0",
+    "@types/node": "^18.6.1",
+    "@types/react": "^18.0.14",
+    "@types/react-dom": "^18.0.5",
+    "babel-plugin-transform-typescript-metadata": "^0.3.2",
+    "dotenv-cli": "^6.0.0",
+    "nest-web": "9.0.16",
+    "offlinekit": "0.0.1",
+    "prettier": "^2.7.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "5.0.1",
+    "reflect-metadata": "0.1.13",
+    "request": "2.x",
+    "typescript": "4.x",
+    "workbox-background-sync": "6.x",
+    "workbox-broadcast-update": "6.x",
+    "workbox-cacheable-response": "6.x",
+    "workbox-core": "6.x",
+    "workbox-expiration": "6.x",
+    "workbox-google-analytics": "6.x",
+    "workbox-navigation-preload": "6.x",
+    "workbox-precaching": "6.x",
+    "workbox-range-requests": "6.x",
+    "workbox-routing": "6.x",
+    "workbox-strategies": "6.x",
+    "workbox-streams": "6.x",
+    "workbox-window": "6.x"
+  },
+  "scripts": {
+    "postinstall": "npm run patch",
+    "patch": "node scripts/patch",
+    "format": "prettier --write \"src/**/*.ts(x)?\"",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "serve": "node scripts/server"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "packageManager": "yarn@3.2.2"
+}
